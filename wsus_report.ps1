@@ -1,5 +1,9 @@
-﻿###Synopsis###
-# This scripts runs a report on needed patch count for each group in the group.txt file, then it cleans up the CSV, converts it to an HTML and launches another script to email the files to each group#
+<#
+.SYNOPSIS
+    Generate WSUS Report of Needed Patches
+.DESCRIPTION
+    This scripts runs a report on needed patch count for each group in the group.txt file, then it cleans up the CSV, converts it to an HTML and launches another script to email the files to each group
+#>
 
 #Deletes previous reports
 Remove-Item ".\reports\*"
