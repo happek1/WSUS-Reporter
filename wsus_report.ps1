@@ -14,7 +14,7 @@ $computerscope = New-Object Microsoft.UpdateServices.Administration.ComputerTarg
 $computerscope.IncludeDownstreamComputerTargets = "True"
 $updatescope = New-Object Microsoft.UpdateServices.Administration.UpdateScope
 $updatescope.ApprovedStates = "LatestRevisionApproved"
-$updateScope.IncludedInstallationStates = 'Downloaded','NotInstalled'
+$updatescope.UpdateApprovalActions = "Install"
 
 #Loop for each group in text file
 ForEach ($Targetgroup in Get-Content "groups.txt")
